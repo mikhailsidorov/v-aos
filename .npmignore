@@ -1,0 +1,8 @@
+src
+.prettierrc
+.eslintrc.js
+.gitignore
+dev
+build
+.github
+node_modules
