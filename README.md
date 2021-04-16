@@ -4,13 +4,18 @@ Vue plugin for [AOS (animate on scroll library)](https://github.com/michalsnik/a
 
 ## Using
 
-### 1. Install
+### 1. Unpkg
+```html
+<script src="https://unpkg.com/v-aos"></script>
+```
+
+### 2. Package manager
 
 ```bash
 npm i v-aos --save
 ```
 
-### 2. Plug-in
+### 3. Plug-in
 
 ```js
 import Vue from 'vue'
@@ -29,7 +34,7 @@ Vue.use(VAos, {
 })
 ```
 
-### 3. Use in your components
+### 4. Use in your components
 
 ```html
 <template>
@@ -57,7 +62,7 @@ With parameters:
 
 [List of available options](https://github.com/michalsnik/aos#1-initialize-aos)
 
-### 4. Use with Nuxt
+### 5. Use with Nuxt
 
 plugins/v-aos.js:
 
@@ -76,7 +81,7 @@ plugins: [
 ]
 ```
 
-### 5. Access AOS object
+### 6. Access AOS object
 
 AOS object can be accessed through $aos property in components or through window.AOS
 
@@ -88,7 +93,7 @@ export default {
 }
 ```
 
-### 6. AOS events
+### 7. AOS events
 
 ```html
 <div v-aos:fade-up @aos:in="handleAosIn"></div>
