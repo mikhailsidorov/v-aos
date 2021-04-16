@@ -1,6 +1,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import _kebabCase from 'lodash/kebabCase';
+import kebabCase from 'lodash.kebabcase';
 
 function setAOSAttrs(el, params) {
   for (const paramName in params) {
@@ -25,7 +25,7 @@ function isAOSAttribute(attributeName) {
 
 function makeAOSAttributeName(string) {
   const preffix = 'data-aos';
-  return string === '' ? preffix : `${preffix}-${_kebabCase(string)}`;
+  return string === '' ? preffix : `${preffix}-${kebabCase(string)}`;
 }
 
 export const directive = {
