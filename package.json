@@ -1,6 +1,6 @@
 {
   "name": "v-aos",
-  "version": "0.0.3-a1",
+  "version": "0.0.3-a2",
   "description": "Vue plugin for AOS (Animate on scroll library)",
   "main": "dist/v-aos.cjs.js",
   "module": "dist/v-aos.esm.js",
