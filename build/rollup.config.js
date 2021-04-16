@@ -13,7 +13,7 @@ export default {
     name: 'VAos',
     exports: 'named',
     sourcemap: true,
-    globals: { 'lodash/kebabCase': '_kebabCase'   },
+    globals: { 'lodash/kebabCase': '_kebabCase' },
   },
   plugins: [
     peerDepsExternal(),
@@ -23,7 +23,7 @@ export default {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
     }),
     postcss({ minimize: true }),
-    isProduction() && terser(),
+    // isProduction() && terser(),
     isProduction() && analyze(),
   ],
 };
