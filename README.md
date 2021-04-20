@@ -88,7 +88,7 @@ AOS object can be accessed through $aos property in components or through window
 ```js
 export default {
   mounted() {
-    this.$aos.refreshHard()
+    this.$nextTick(() => this.$aos.refreshHard())
   }
 }
 ```
